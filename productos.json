@@ -1,0 +1,173 @@
+[
+  {
+    "id": "silla-kennedy",
+    "nombre": "Silla Kennedy",
+    "precio": 170000,
+    "precioAnterior": 200000,
+    "categoria": "Sillas",
+    "imagen": "images/Productos/silla-kennedy.jpeg",
+    "descripcion": "Silla Kennedy Petiribi Macizo. Diseño clásico con estructura en madera maciza de Petiribi, acabado natural al aceite. Ideal para comedor o living."
+  },
+  {
+    "id": "silla-bali-tejida",
+    "nombre": "Silla Bali Tejida",
+    "precio": 165000,
+    "precioAnterior": 200000,
+    "categoria": "Sillas",
+    "imagen": "images/Productos/silla-bali-tejida.jpeg",
+    "descripcion": "Silla Bali Petiribi con asiento tejido en hilo Kraft. Estructura en madera maciza de Petiribi con asiento artesanal de diseño contemporáneo."
+  },
+  {
+    "id": "silla-bali-curva",
+    "nombre": "Silla Bali",
+    "precio": 165000,
+    "precioAnterior": 200000,
+    "categoria": "Sillas",
+    "imagen": "images/Productos/silla-bali.jpeg",
+    "descripcion": "Silla Bali Asiento Curvo Petiribi. Estructura en madera maciza de Petiribi con asiento curvado de gran confort y diseño ergonómico."
+  },
+  {
+    "id": "silla-bali-tapizada",
+    "nombre": "Silla Bali Tapizada",
+    "precio": 180000,
+    "precioAnterior": 210000,
+    "categoria": "Sillas",
+    "imagen": "images/Productos/silla-bali-tapizada.jpeg",
+    "descripcion": "Silla Bali Petiribi Macizo tapizada en pana antimancha. Combinación de madera maciza y tapizado premium, ideal para comedores modernos."
+  },
+  {
+    "id": "banqueta-bianca",
+    "nombre": "Banqueta Bianca",
+    "precio": 150000,
+    "precioAnterior": 190000,
+    "categoria": "Banquetas",
+    "imagen": "images/Productos/banqueta-bianca.jpeg",
+    "descripcion": "Banqueta Petiribi con asiento de junco natural tejido. Estructura en madera de Petiribi con asiento en junco, ideal para barra o mesada."
+  },
+  {
+    "id": "banqueta-rene",
+    "nombre": "Banqueta Rene",
+    "precio": 150000,
+    "precioAnterior": 190000,
+    "categoria": "Banquetas",
+    "imagen": "images/Productos/banqueta-rene.jpeg",
+    "descripcion": "Banqueta Rene Petiribi con asiento tejido Kraft. Estructura de Petiribi macizo con asiento artesanal tejido en hilo Kraft natural."
+  },
+  {
+    "id": "banqueta-bali-kraft",
+    "nombre": "Banqueta Bali Hilo Kraft",
+    "precio": 195000,
+    "precioAnterior": 240000,
+    "categoria": "Banquetas",
+    "imagen": "images/Productos/banqueta-bali-kraft.jpeg",
+    "descripcion": "Banqueta Bali Petiribi con asiento tejido en kraft. Diseño Bali con brazos curvos en Petiribi macizo y asiento artesanal tejido en hilo Kraft."
+  },
+  {
+    "id": "banqueta-bali",
+    "nombre": "Banqueta Bali",
+    "precio": 195000,
+    "precioAnterior": 240000,
+    "categoria": "Banquetas",
+    "imagen": "images/Productos/banqueta-bali.jpeg",
+    "descripcion": "Banqueta Bali asiento curvo. Estructura con brazos curvos en Petiribi macizo y asiento curvado de alto confort, ideal para barra o desayunador."
+  },
+  {
+    "id": "mesa-morena-200",
+    "nombre": "Mesa Morena 200x100",
+    "precio": 790000,
+    "precioAnterior": 1100000,
+    "categoria": "Mesas",
+    "imagen": "images/Productos/mesa-morena-200.jpeg",
+    "descripcion": "Mesa Morena Petiribi Macizo tabla repartida 240x120. Fabricada en madera maciza de Petiribi con diseño de tablas repartidas. Capacidad para 8 personas."
+  },
+  {
+    "id": "mesa-roxana-200",
+    "nombre": "Mesa Roxana 200x100",
+    "precio": 980000,
+    "precioAnterior": 1300000,
+    "categoria": "Mesas",
+    "imagen": "images/Productos/mesa-roxana-200.jpeg",
+    "descripcion": "Mesa Petiribi Macizo 200x100. Tapa entera de Petiribi macizo con veta natural única. Estructura robusta y elegante, capacidad para 8 personas."
+  },
+  {
+    "id": "mesa-baja-brunella",
+    "nombre": "Mesa Baja Brunella",
+    "precio": 300000,
+    "precioAnterior": 340000,
+    "categoria": "Mesas Bajas",
+    "imagen": "images/Productos/mesa-baja-brunella.jpeg",
+    "descripcion": "Mesa Baja Brunella 070x100. Mesa de centro en madera maciza con diseño de tablas, base con travesaño. Perfecta para living o deck exterior."
+  },
+  {
+    "id": "mesa-baja-lucila",
+    "nombre": "Mesa Baja Lucila",
+    "precio": 300000,
+    "precioAnterior": 340000,
+    "categoria": "Mesas Bajas",
+    "imagen": "images/Productos/mesa-baja-lucila.jpeg",
+    "descripcion": "Mesa Baja Lucila 070x100. Mesa de centro en madera maciza con diseño clásico y base sólida. Ideal para interiores o espacios al aire libre."
+  },
+  {
+    "id": "camastro-napoles-doble",
+    "nombre": "Camastro Nápoles Doble",
+    "precio": 450000,
+    "precioAnterior": 490000,
+    "categoria": "Camastros",
+    "imagen": "images/Productos/camastro-napoles-doble.jpeg",
+    "descripcion": "Camastro Nápoles Madera Maciza 180x080. Camastro de madera maciza con respaldo y base de tablillas. Ideal para exterior o interior, diseño minimalista."
+  },
+  {
+    "id": "camastro-napoles-individual",
+    "nombre": "Camastro Nápoles Individual",
+    "precio": 350000,
+    "precioAnterior": 390000,
+    "categoria": "Camastros",
+    "imagen": "images/Productos/camastro-napoles-individual.jpeg",
+    "descripcion": "Camastro Madera Maciza 080x080. Camastro individual en madera maciza con respaldo y base de tablillas. Diseño limpio y contemporáneo."
+  },
+  {
+    "id": "camastro-individual-tapiceria",
+    "nombre": "Camastro Individual con Tapicería",
+    "precio": 270000,
+    "precioAnterior": 320000,
+    "categoria": "Camastros",
+    "imagen": "images/Productos/camastro-individual-tapiceria.jpeg",
+    "descripcion": "Camastro individual 070x080 con almohadones de base y respaldo con cierres para lavado. Incluye tapicería completa de tela blanca desmontable."
+  },
+  {
+    "id": "camastro-doble-tapiceria",
+    "nombre": "Camastro Doble con Tapicería",
+    "precio": 360000,
+    "precioAnterior": 410000,
+    "categoria": "Camastros",
+    "imagen": "images/Productos/camastro-doble-tapiceria.jpeg",
+    "descripcion": "Camastro 070x180 con almohadones de base y respaldo con cierre para lavado. Tapicería completa en tela blanca, ideal para exteriores o piscinas."
+  },
+  {
+    "id": "juego-camastro-mesa",
+    "nombre": "Juego Camastro + Mesa",
+    "precio": 1200000,
+    "precioAnterior": 1500000,
+    "categoria": "Juegos",
+    "imagen": "images/Productos/juego-camastro-mesa.jpeg",
+    "descripcion": "2 Camastros 80x80 + 1 Camastro 180x80 + Mesa Baja 70x100. Juego completo en madera maciza para terraza o jardín. Todo en el mismo estilo y terminación."
+  },
+  {
+    "id": "jgo-mesa-6-sillas",
+    "nombre": "Juego Mesa + 6 Sillas",
+    "precio": 1490000,
+    "precioAnterior": 1630000,
+    "categoria": "Juegos",
+    "imagen": "images/Productos/jgo-mesa-6-sillas.jpeg",
+    "descripcion": "Juego de Mesa 160x080 Petiribi Macizo + 6 Sillas Bali. Comedor completo en Petiribi macizo, incluye mesa con base robusta y 6 sillas Bali a juego."
+  },
+  {
+    "id": "mesa-200-8-sillas",
+    "nombre": "Mesa 200x100 + 8 Sillas",
+    "precio": 1990000,
+    "precioAnterior": 2320000,
+    "categoria": "Juegos",
+    "imagen": "images/Productos/mesa-200-8-sillas.jpeg",
+    "descripcion": "Mesa 200x100 + 8 Sillas Bali todo en Petiribi Macizo. Comedor de gran porte para 8 personas, todo fabricado en madera maciza de Petiribi con acabado natural."
+  }
+]
