@@ -282,16 +282,6 @@ async function initCatalog() {
         </div>
         <div class="card-actions">
           <a href="producto.html?id=${p.id}" class="btn-ver">Ver detalle →</a>
-          <div class="card-qty">
-            <button class="btn-qty" onclick="this.nextElementSibling.textContent = Math.max(1, +this.nextElementSibling.textContent - 1)">−</button>
-            <span class="qty-val">1</span>
-            <button class="btn-qty" onclick="this.previousElementSibling.textContent = +this.previousElementSibling.textContent + 1">+</button>
-          </div>
-          <button class="btn-agregar" onclick="
-            const qty = +this.previousElementSibling.querySelector('.qty-val').textContent;
-            for(let i=0;i<qty;i++) Cart.add({id:'${p.id}',nombre:'${p.nombre.replace(/'/g,"\\'")}',precio:${p.precio},imagen:'${p.imagen}'});
-            this.previousElementSibling.querySelector('.qty-val').textContent = 1;
-          ">+ Agregar al carrito</button>
         </div>
       </article>`).join('');
   }
