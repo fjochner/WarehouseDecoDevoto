@@ -990,3 +990,62 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .whatsapp-float { bottom: 18px; right: 18px; width: 52px; height: 52px; }
   .toast { right: 12px; bottom: 90px; }
 }
+
+/* ── Selector de cantidad ── */
+.card-qty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-qty {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-accent);
+  background: transparent;
+  color: var(--color-accent);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  line-height: 1;
+}
+
+.btn-qty:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.qty-val {
+  font-size: 1rem;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.detalle-qty {
+  margin-bottom: 12px;
+}
+
+.detalle-qty .btn-qty {
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
+}
+
+.detalle-qty .qty-val {
+  font-size: 1.2rem;
+  min-width: 28px;
+}
+
+.card-actions .card-qty {
+  justify-content: center;
+}
+
+.detalle-qty {
+  justify-content: center;
+}

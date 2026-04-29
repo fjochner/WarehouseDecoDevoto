@@ -279,12 +279,19 @@ async function initCatalog() {
         <div class="card-body">
           <h2 class="card-name">${p.nombre}</h2>
           <p class="card-price">${formatPrecio(p.precio)} <span>ARS</span></p>
-          <div class="card-actions">
-            <a href="producto.html?id=${p.id}" class="btn-ver">Ver detalle →</a>
-            <button class="btn-agregar" onclick="Cart.add({id:'${p.id}',nombre:'${p.nombre.replace(/'/g,"\\'")}',precio:${p.precio},imagen:'${p.imagen}'})">
-              + Agregar al carrito
-            </button>
+        </div>
+        <div class="card-actions">
+          <a href="producto.html?id=${p.id}" class="btn-ver">Ver detalle →</a>
+          <div class="card-qty">
+            <button class="btn-qty" onclick="this.nextElementSibling.textContent = Math.max(1, +this.nextElementSibling.textContent - 1)">−</button>
+            <span class="qty-val">1</span>
+            <button class="btn-qty" onclick="this.previousElementSibling.textContent = +this.previousElementSibling.textContent + 1">+</button>
           </div>
+          <button class="btn-agregar" onclick="
+            const qty = +this.previousElementSibling.querySelector('.qty-val').textContent;
+            for(let i=0;i<qty;i++) Cart.add({id:'${p.id}',nombre:'${p.nombre.replace(/'/g,"\\'")}',precio:${p.precio},imagen:'${p.imagen}'});
+            this.previousElementSibling.querySelector('.qty-val').textContent = 1;
+          ">+ Agregar al carrito</button>
         </div>
       </article>`).join('');
   }
@@ -372,6 +379,11 @@ async function initDetalle() {
         <hr class="detail-divider">
 
         <!-- Agregar al carrito -->
+        <div class="card-qty detalle-qty">
+          <button class="btn-qty" onclick="const s=document.getElementById('qty-val-detalle');s.textContent=Math.max(1,+s.textContent-1)">−</button>
+          <span class="qty-val" id="qty-val-detalle">1</span>
+          <button class="btn-qty" onclick="const s=document.getElementById('qty-val-detalle');s.textContent=+s.textContent+1">+</button>
+        </div>
         <button class="btn-add-detail" id="btn-add-cart">
           <svg viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Agregar al carrito
@@ -392,9 +404,15 @@ async function initDetalle() {
     </div>`;
 
   // Botón agregar al carrito en detalle
+  
   document.getElementById('btn-add-cart')?.addEventListener('click', () => {
+  const qty = parseInt(document.getElementById('qty-val-detalle').textContent);
+  for (let i = 0; i < qty; i++) {
     Cart.add({ id: producto.id, nombre: producto.nombre, precio: producto.precio, imagen: producto.imagen });
-  });
+  }
+  document.getElementById('qty-val-detalle').textContent = '1'; // reset
+});
+  
 }
 
 function mostrarError(root, mensaje) {
