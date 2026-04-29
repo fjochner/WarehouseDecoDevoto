@@ -34,6 +34,14 @@ const Cart = {
     this.updateBadge();
   },
 
+  // ── FIX 2: Método para vaciar el carrito ──
+  clear() {
+    this.items = [];
+    this.save();
+    this.render();
+    this.updateBadge();
+  },
+
   changeQty(id, delta) {
     const item = this.items.find(i => i.id === id);
     if (!item) return;
@@ -171,11 +179,12 @@ function showToast(msg) {
 
 /* ── CART DRAWER ── */
 function initCartDrawer() {
-  const overlay = document.getElementById('cart-overlay');
-  const drawer  = document.getElementById('cart-drawer');
-  const openBtn = document.getElementById('cart-open');
-  const closeBtn = document.getElementById('cart-close');
+  const overlay     = document.getElementById('cart-overlay');
+  const drawer      = document.getElementById('cart-drawer');
+  const openBtn     = document.getElementById('cart-open');
+  const closeBtn    = document.getElementById('cart-close');
   const checkoutBtn = document.getElementById('cart-checkout');
+  const clearBtn    = document.getElementById('cart-clear'); // ── FIX 2: botón vaciar
 
   if (!overlay || !drawer) return;
 
@@ -194,6 +203,11 @@ function initCartDrawer() {
   closeBtn?.addEventListener('click', closeCart);
   overlay.addEventListener('click', closeCart);
   checkoutBtn?.addEventListener('click', () => Cart.checkout());
+
+  // ── FIX 2: listener para vaciar carrito ──
+  clearBtn?.addEventListener('click', () => {
+    if (confirm('¿Vaciar el carrito?')) Cart.clear();
+  });
 }
 
 /* ════════════════════════════════════════════════
@@ -409,6 +423,7 @@ function initWhatsappFloat() {
 document.addEventListener('DOMContentLoaded', () => {
   Cart.load();
   Cart.updateBadge();
+  Cart.render();      // ── FIX 1: renderizar carrito al cargar la página
   initCartDrawer();
   initWhatsappFloat();
   initCatalog();

@@ -107,14 +107,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: var(--space-sm);
   text-decoration: none;
 }
-/* Logo image (real logo) */
 .logo-img {
   height: 52px;
   width: auto;
   object-fit: contain;
   display: block;
 }
-/* Fallback mark (hidden when logo img loads) */
 .logo-mark {
   width: 38px;
   height: 38px;
@@ -425,6 +423,27 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-size: .72rem;
   color: var(--color-text-light);
   text-align: center;
+}
+
+/* ── BOTÓN VACIAR CARRITO ── */
+.btn-vaciar {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 1.5px solid #e57373;
+  color: #c0392b;
+  border-radius: var(--radius-md);
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+  font-family: var(--font-body);
+}
+.btn-vaciar:hover {
+  background: #c0392b;
+  border-color: #c0392b;
+  color: #fff;
 }
 
 /* Add to cart button */
